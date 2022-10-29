@@ -1,0 +1,56 @@
+@import "fonts";
+@import "colors";
+.container {
+  min-height: 6.18rem;
+  background-color: $amazon-blue;
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  padding: 0 5rem;
+  // logo
+  .logo {
+    flex-basis: 16.66%;
+  }
+  .search {
+    flex-basis: 50%;
+    height: 2.5rem;
+    background-color: #fff;
+    // display: flex;
+    border-radius: 4px;
+    input {
+      width: 95%;
+      padding: 0.5rem 1.5rem;
+      border: none;
+      outline: none;
+      font-family: $inter-font-family;
+      font-size: 0.875rem;
+      font-weight: 500;
+      &::placeholder {
+        font-family: $inter-font-family;
+        font-style: italic;
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: $gray;
+      }
+    }
+    // button
+    button {
+      border: none;
+      width: 5%;
+      height: 100%;
+      background-color: $btn-orange-2;
+      outline: none;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+      &:hover {
+        background-color: $amazon-orange;
+      }
+    }
+  }
+  .account-info {
+    flex-basis: 33%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 9%;
+  }
+}

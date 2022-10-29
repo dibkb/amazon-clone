@@ -1,0 +1,8 @@
+.container {
+}
+.body {
+  padding: 2rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 1.875rem;
+}

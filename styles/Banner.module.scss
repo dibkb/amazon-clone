@@ -1,0 +1,49 @@
+@import "fonts";
+@import "colors";
+.banner-container {
+  grid-column-start: 1;
+  grid-column-end: 8;
+  background-color: $dark;
+  border-radius: 0.75rem;
+  display: flex;
+  .right {
+    align-self: center;
+    padding: 3rem;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    em {
+      font-family: $poppins-font-family;
+      font-style: normal;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      color: $amazon-orange;
+    }
+    h3 {
+      color: #fff;
+      font-size: 1.5rem;
+      font-family: $montserrat-font-family;
+    }
+    small {
+      font-family: $poppins-font-family;
+      font-size: 0.75rem;
+      color: $gray;
+      margin-bottom: 2rem;
+    }
+    button {
+      padding: 0.8rem;
+      max-width: 10rem;
+      border-radius: 6px;
+      cursor: pointer;
+      background-color: $btn-orange;
+      font-family: $inter-font-family;
+      font-size: 1rem;
+      &:hover {
+        background-color: $amazon-orange;
+      }
+    }
+  }
+}
