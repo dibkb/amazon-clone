@@ -1,5 +1,46 @@
 @import "colors";
 @import "fonts";
+// ------------------------------ CATEGORIES -----------------------------------
+.categories {
+  grid-column-start: 1;
+  grid-column-end: 9;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  .category-container {
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .icon-container {
+    background-color: $orange-light;
+    cursor: pointer;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    &:hover {
+      background-color: $btn-orange;
+    }
+    .icons {
+      color: $amazon-orange;
+    }
+  }
+  p {
+    font-size: $inter-font-family;
+    font-size: 0.75rem;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; /* Don't forget this one */
+    text-overflow: ellipsis;
+    width: 100px;
+    cursor: pointer;
+  }
+}
 // ------------------------------PIXEL-------------------------------------------
 .pixel-container {
   display: flex;
