@@ -1,0 +1,53 @@
+@import "colors";
+@import "fonts";
+// ------------------------------PIXEL-------------------------------------------
+.pixel-container {
+  display: flex;
+  border: 0.6px solid $border-color;
+  border-radius: 6px;
+  .text {
+    padding: 2rem;
+    font-family: $inter-font-family;
+
+    h3 {
+      font-size: 1.25rem;
+    }
+    p {
+      line-height: 1.25rem;
+      font-size: 0.75rem;
+      color: $text-light;
+      margin-bottom: 2rem;
+    }
+    button {
+      background-color: $dark;
+      color: #fff;
+      font-weight: 500;
+      font-size: 0.875rem;
+      border-radius: 6px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      &:hover {
+        background-color: $amazon-blue;
+      }
+    }
+  }
+}
+
+// ------------------------------SHAMSHERA-------------------------------------------
+.shamshera-container {
+  border-radius: 6px;
+  background: linear-gradient(
+      89.8deg,
+      rgba(20, 25, 32, 0.84) 2.77%,
+      rgba(20, 25, 32, 0.1764) 99.76%
+    ),
+    url("https://stat2.bollywoodhungama.in/wp-content/uploads/2018/05/Shamshera-1.jpg");
+  object-fit: cover;
+  background-position: 50% 20%;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-family: $inter-font-family;
+  h3 {
+    font-size: 1.5rem;
+  }
+}

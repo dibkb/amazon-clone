@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import Banner from "../src/components/Banner";
+import Pixel from "../src/components/Body Components/Pixel";
+import Shamshera from "../src/components/Body Components/Shamshera";
 import Header from "../src/components/Header";
 import styles from "../styles/Home.module.scss";
 
@@ -16,6 +18,11 @@ export default function Home() {
       {/* Body */}
       <div className={styles["body"]}>
         <Banner />
+        <aside className={styles["wishlist"]}>Your Wishlist</aside>
+        <section className={styles["small-banner"]}>
+          <Pixel />
+          <Shamshera />
+        </section>
       </div>
     </div>
   );
