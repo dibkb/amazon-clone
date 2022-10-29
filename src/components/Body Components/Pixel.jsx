@@ -15,6 +15,7 @@ const Pixel = () => {
       </aside>
       <aside>
         <Image
+          alt={"Pixel 7"}
           src={pixel_image.src}
           width={pixel_image.width}
           height={pixel_image.height}
