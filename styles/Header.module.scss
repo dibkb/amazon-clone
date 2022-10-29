@@ -54,3 +54,18 @@
     gap: 9%;
   }
 }
+.header-bottom {
+  padding: 0 5rem;
+  background-color: $nav-blue;
+  color: #fff;
+  font-family: $inter-font-family;
+  display: flex;
+  gap: 1rem;
+  span {
+    display: flex;
+    align-items: center;
+    p {
+      margin-left: 0.5rem;
+    }
+  }
+}
