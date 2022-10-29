@@ -1,5 +1,6 @@
 import React from "react";
 import { BiCart } from "react-icons/bi";
+import styles from "../../../styles/HeaderComponents.module.scss";
 export const Cart = ({ item }) => {
   return (
     <div
@@ -33,6 +34,7 @@ export const Cart = ({ item }) => {
         style={{
           fontWeight: 500,
         }}
+        className={styles["text"]}
       >
         Cart
       </p>

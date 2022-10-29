@@ -1,5 +1,6 @@
 import React from "react";
 import { RiArrowDropDownFill } from "react-icons/ri";
+import styles from "../../../styles/HeaderComponents.module.scss";
 const AccInfo = ({ heading, text }) => {
   return (
     <div
@@ -21,6 +22,7 @@ const AccInfo = ({ heading, text }) => {
             fontSize: "0.75rem",
             fontWeight: 400,
           }}
+          className={styles["text"]}
         >
           {heading}
         </a>
@@ -29,6 +31,7 @@ const AccInfo = ({ heading, text }) => {
             fontSize: "1rem",
             fontWeight: 500,
           }}
+          className={styles["text"]}
         >
           {text}
         </a>
