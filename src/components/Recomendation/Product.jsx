@@ -20,7 +20,7 @@ const Product = ({ ele }) => {
         alt={ele.description}
         width={150}
         height={150}
-        objectFit={"cover"}
+        object-fit={"cover"}
       />
       <p>{ele.title}</p>
       <Rating rating={ele.rating.rate} count={ele.rating.count} />

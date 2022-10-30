@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import styles from "../../styles/Header.module.scss";
 import { AmazonLogo } from "../../public/svg/Amazonlogo";
 import AccInfo from "./Header Components/AccInfo";
@@ -10,9 +11,14 @@ const Header = () => {
   return (
     <>
       <div className={styles["container"]}>
-        <div className={styles["logo"]}>
+        <Link
+          href={{
+            pathname: "/",
+          }}
+          className={styles["logo"]}
+        >
           <AmazonLogo />
-        </div>
+        </Link>
         <div className={styles["search"]}>
           <input type="text" placeholder="Search for anything" />
           <button>

@@ -20,7 +20,7 @@ const Rating = ({ rating, count }) => {
           );
         })}
       </span>
-      <span className={styles["count"]}>{count}</span>
+      {count && <span className={styles["count"]}>{count}</span>}
     </div>
   );
 };
