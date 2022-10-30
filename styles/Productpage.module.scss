@@ -10,7 +10,6 @@
   & > * {
     flex-basis: 0;
     flex-grow: 1;
-    // border: 1px solid red;
   }
 }
 .info header {
@@ -61,6 +60,7 @@
 }
 .price-cart {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   .price {
     small {
@@ -104,10 +104,56 @@
       }
     }
   }
+  .cart-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .add {
+      width: 3rem;
+      height: 3rem;
+      cursor: pointer;
+      background-color: $btn-white-bg;
+      border: 0.6px solid $border-cart-btn;
+      border-radius: 6px;
+    }
+  }
+  .cart-btn {
+    width: calc(100% - 3rem);
+    display: flex;
+    align-items: center;
+    border: 0.6px solid $border-cart-btn;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 3rem;
+    .quantity {
+      width: 3rem;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 6px 0 0 6px;
+      background-color: $btn-white-bg;
+    }
+    .cart {
+      width: calc(100% - 3rem);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      border-radius: 0 6px 6px 0;
+      background-color: $btn-orange-2;
+      border: 0.6px solid $amazon-orange;
+
+      height: 100%;
+      padding: 0 0.5rem;
+      p {
+        margin: 0;
+      }
+    }
+  }
   & > * {
     flex-basis: 0;
     flex-grow: 1;
-    // border: 1px solid red;
   }
 }
 // ++++++++++++++++++++ LOADING +++++++++++++++++++++

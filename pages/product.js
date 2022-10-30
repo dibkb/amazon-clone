@@ -81,9 +81,9 @@ const Product = () => {
                   <a href="#">Details</a>
                 </span>
               </span>
-              <span className={styles["cart"]}>
+              <span className={styles["cart-container"]}>
                 <button className={styles["add"]}>+</button>
-                <div>
+                <div className={styles["cart-btn"]}>
                   <span className={styles["quantity"]}>1</span>
                   <span className={styles["cart"]}>
                     <IoMdCart />
