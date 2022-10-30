@@ -8,13 +8,16 @@
   display: flex;
   flex-direction: column;
   padding: 1rem 2rem;
+  font-family: $inter-font-family;
+
   p {
-    font-family: $inter-font-family;
+    height: 10%;
     color: $dark;
     font-size: 1.125rem;
     font-weight: 500;
   }
   .product-container {
+    height: 90%;
     display: flex;
   }
 }
@@ -22,17 +25,41 @@
 .product {
   flex-basis: 0;
   flex-grow: 1;
+  cursor: pointer;
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
   p {
-    font-size: 0.75rem;
     text-align: start;
-    //  overflow: hidden;
-    //  white-space: wrap; /* Don't forget this one */
-    //  text-overflow: ellipsis;
     max-width: 150px;
-    //  cursor: pointer;
+    height: 3px;
     display: -webkit-box;
     overflow: hidden;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    font-size: 0.75rem;
+    line-height: 1.125; // Default is 1.2, but varies by browser
+    min-height: 1.68rem; // 2 * 1em * 1.125
+    // (number of lines) * (font-size) * (line-height multiplier)
+  }
+  .price {
+    margin-top: 0.8rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+}
+//=============================== RATING ==========================
+.rating-container {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  .rate {
+    display: flex;
+  }
+  .count {
+    font-size: 0.75rem;
+    color: $rating-blue;
+    font-weight: 500;
   }
 }

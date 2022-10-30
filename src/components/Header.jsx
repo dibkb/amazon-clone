@@ -32,7 +32,12 @@ const Header = () => {
         </span>
         <span>Prime Video</span>
         <span>Amazon Business</span>
+        <span>Amazon Basics</span>
+        <span>Audible</span>
         <span>Today&apos;s Deals</span>
+        <span>Coupons</span>
+        <span>Gift Cards</span>
+        <span>Subscribe and Save</span>
       </div>
     </>
   );
