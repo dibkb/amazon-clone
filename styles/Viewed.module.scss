@@ -25,3 +25,53 @@
     }
   }
 }
+.items-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.2rem;
+  justify-content: space-between;
+  height: 90%;
+  .viewed-item {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    .info {
+      // border: 1px solid red;
+      width: 90%;
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          margin: 0;
+          font-weight: 600;
+          font-size: 0.875rem;
+          overflow: hidden;
+          white-space: nowrap; /* Don't forget this one */
+          text-overflow: ellipsis;
+          width: 90%;
+        }
+        em {
+          color: $gray;
+          font-weight: 500;
+          font-size: 0.875rem;
+          font-style: normal;
+        }
+      }
+      button {
+        margin-top: 0.5rem;
+        padding: 0.45rem 0.9rem;
+        border: none;
+        font-size: 0.75rem;
+        font-family: $inter-font-family;
+        font-weight: 600;
+        background-color: $btn-orange-2;
+        border-radius: 4px;
+        cursor: pointer;
+        &:hover {
+          background-color: $amazon-orange;
+        }
+      }
+    }
+  }
+}
