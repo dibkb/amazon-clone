@@ -8,26 +8,6 @@
   grid-template-rows: 1fr 0.5fr 0.5fr 1fr;
   column-gap: 1.875rem;
   row-gap: 2.25rem;
-  .orders {
-    grid-column-start: 9;
-    grid-column-end: 13;
-    border: 0.6px solid $border-color;
-    border-radius: 6px;
-  }
-  .history {
-    grid-column-start: 9;
-    grid-column-end: 13;
-    border: 0.6px solid $border-color;
-    border-radius: 6px;
-    grid-row-start: 2;
-    grid-row-end: 4;
-  }
-  .wishlist {
-    border: 0.6px solid $border-color;
-    border-radius: 6px;
-    grid-column-start: 9;
-    grid-column-end: 13;
-  }
   .small-banner {
     grid-column-start: 1;
     grid-column-end: 9;

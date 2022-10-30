@@ -4,7 +4,10 @@ import Categories from "../src/components/Body Components/Categories";
 import Pixel from "../src/components/Body Components/Pixel";
 import Shamshera from "../src/components/Body Components/Shamshera";
 import Header from "../src/components/Header";
+import Orders from "../src/components/Orders";
 import Recomendation from "../src/components/Recomendation/Recomendation";
+import Viewed from "../src/components/Viewed";
+import Wishlist from "../src/components/Wishlist";
 import styles from "../styles/Home.module.scss";
 
 export default function Home({ products }) {
@@ -19,15 +22,15 @@ export default function Home({ products }) {
       {/* Body */}
       <div className={styles["body"]}>
         <Banner />
-        <aside className={styles["orders"]}>Your Recent Orders</aside>
+        <Orders />
         <Categories />
-        <aside className={styles["history"]}>Your Recently Viewed Items</aside>
+        <Viewed />
         <section className={styles["small-banner"]}>
           <Pixel />
           <Shamshera />
         </section>
         <Recomendation products={products} />
-        <aside className={styles["wishlist"]}>Your Wishlist</aside>
+        <Wishlist />
       </div>
     </div>
   );

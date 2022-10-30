@@ -1,0 +1,65 @@
+@import "colors";
+@import "fonts";
+.orders-container {
+  grid-column-start: 9;
+  grid-column-end: 13;
+  border: 0.6px solid $border-color;
+  border-radius: 6px;
+  padding: 1.2rem 2rem;
+  font-family: $inter-font-family;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+      margin: 0;
+      font-weight: 500;
+      font-size: 1.25rem;
+    }
+    a {
+      color: $gray;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+  }
+}
+.orders-list-container {
+  margin-top: 1.2rem;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.orders-main {
+  //   border: 1px solid red;
+  display: flex;
+  gap: 2rem;
+  .info {
+    .title {
+      font-weight: 600;
+      font-size: 0.875rem;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  .delivery-status {
+    margin-top: 0.7rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    p {
+      color: $gray;
+    }
+    em {
+      font-style: normal;
+      font-weight: 600;
+      color: $green;
+    }
+    .waring {
+      color: $danger;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "colors";
+@import "fonts";
+.wishlist-container {
+  border: 0.6px solid $border-color;
+  border-radius: 6px;
+  grid-column-start: 9;
+  grid-column-end: 13;
+  padding: 1.2rem 2rem;
+  font-family: $inter-font-family;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+      margin: 0;
+      font-weight: 500;
+      font-size: 1.25rem;
+    }
+    a {
+      color: $gray;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+  }
+}
