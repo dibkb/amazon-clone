@@ -16,7 +16,7 @@
   p {
     margin: 0;
     padding: 0;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     color: $gray;
     text-transform: uppercase;
   }
@@ -62,6 +62,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2rem;
   .price {
     small {
       color: $gray;
@@ -115,6 +116,9 @@
       background-color: $btn-white-bg;
       border: 0.6px solid $border-cart-btn;
       border-radius: 6px;
+      &:hover {
+        background-color: $light-gray;
+      }
     }
   }
   .cart-btn {
@@ -143,7 +147,9 @@
       border-radius: 0 6px 6px 0;
       background-color: $btn-orange-2;
       border: 0.6px solid $amazon-orange;
-
+      &:hover {
+        background-color: $amazon-orange;
+      }
       height: 100%;
       padding: 0 0.5rem;
       p {
@@ -154,6 +160,19 @@
   & > * {
     flex-basis: 0;
     flex-grow: 1;
+  }
+}
+.info footer {
+  margin-top: 2rem;
+  h3 {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: $gray;
+    text-transform: uppercase;
+  }
+  p {
+    margin: 0;
+    line-height: 1.6rem;
   }
 }
 // ++++++++++++++++++++ LOADING +++++++++++++++++++++

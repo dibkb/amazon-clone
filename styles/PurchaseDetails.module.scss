@@ -1,0 +1,106 @@
+@import "colors";
+@import "fonts";
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 0.6px solid $light-gray;
+  border-radius: 6px;
+  background-color: $btn-white-bg;
+  header {
+    display: flex;
+    border-bottom: 0.6px solid $light-gray;
+    .radio {
+      padding: 0.8rem 1.2rem;
+      width: 70%;
+      display: flex;
+      gap: 2rem;
+      .radio-box-checked {
+        font-size: 1.2em;
+        color: $amazon-orange;
+      }
+      .radio-box {
+        font-size: 1.2em;
+      }
+      .new {
+        cursor: pointer;
+        small {
+          font-weight: 500;
+          color: $amazon-orange;
+        }
+      }
+      .used {
+        cursor: pointer;
+        small {
+          color: $gray;
+        }
+      }
+      & > * {
+        flex-basis: 0;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        span {
+          width: 80%;
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+          b {
+            font-size: 0.875rem;
+          }
+          small {
+            font-size: 0.875rem;
+          }
+        }
+      }
+    }
+    .select-shipping {
+      width: 30%;
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.8rem 1.2rem;
+      border-left: 0.6px solid $light-gray;
+    }
+  }
+  main {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 0.6rem;
+    span:nth-child(2) {
+      justify-content: flex-end;
+    }
+    .icon {
+      font-size: 1.5em;
+      color: $racing-blue;
+    }
+    .icon-blank {
+      font-size: 1.5em;
+      color: $gray;
+    }
+    span {
+      // border: 1px solid red;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+      p {
+        margin: 0;
+        font-weight: 500;
+        color: $gray;
+        b {
+          color: $dark;
+        }
+        em {
+          color: $racing-blue;
+        }
+        em.orange {
+          color: $amazon-orange;
+        }
+      }
+    }
+  }
+}

@@ -9,8 +9,11 @@ import Head from "next/dist/shared/lib/head";
 import Header from "../src/components/Header";
 import styles from "../styles/Productpage.module.scss";
 import Rating from "../src/components/Recomendation/Rating";
+import PurchaseDetails from "../src/components/PurchaseDetails";
 const Product = () => {
+  const [outOfStock] = useState(Math.random() < 0.5);
   const [product, setProduct] = useState();
+  const [quantity, setQuantity] = useState(1);
   const [loaded, setLoaded] = useState(false);
   const router = useRouter();
   useEffect(() => {
@@ -27,7 +30,9 @@ const Product = () => {
     };
     fetchData();
   }, [router.query.id]);
-  console.log(product);
+  const incrementQuantity = () => {
+    setQuantity((prev) => prev + 1);
+  };
   return (
     <div className={styles["product-container"]}>
       <Head>
@@ -74,7 +79,7 @@ const Product = () => {
               </span>
               <span className={styles["stock-info"]}>
                 <p className={styles["out-of-stock"]}>
-                  Temporarily out of stock.
+                  {outOfStock ? "Temporarily out of stock." : " "}
                 </p>
                 <span className={styles["shipping"]}>
                   <p>FREE Shipping</p>
@@ -82,9 +87,11 @@ const Product = () => {
                 </span>
               </span>
               <span className={styles["cart-container"]}>
-                <button className={styles["add"]}>+</button>
+                <button className={styles["add"]} onClick={incrementQuantity}>
+                  +
+                </button>
                 <div className={styles["cart-btn"]}>
-                  <span className={styles["quantity"]}>1</span>
+                  <span className={styles["quantity"]}>{quantity}</span>
                   <span className={styles["cart"]}>
                     <IoMdCart />
                     <p>Add to Cart</p>
@@ -92,6 +99,11 @@ const Product = () => {
                 </div>
               </span>
             </section>
+            <PurchaseDetails price={product.price} />
+            <footer className={styles["footer"]}>
+              <h3 className={styles["footer-heading"]}>Product Description</h3>
+              <p>{product.description}</p>
+            </footer>
           </section>
         </div>
       )}
